@@ -1,7 +1,10 @@
 #!/usr/bin/env python3
+'''Task 6's module.
+'''
+from typing import List, Union
 
-to_kv = __import__('7-to_kv').to_kv
 
-print(to_kv.__annotations__)
-print(to_kv("eggs", 3))
-print(to_kv("school", 0.02))
+def sum_mixed_list(mxd_lst: List[Union[int, float]]) -> float:
+    '''Computes the sum of a list of integers and floating-point numbers.
+    '''
+    return float(sum(mxd_lst))
